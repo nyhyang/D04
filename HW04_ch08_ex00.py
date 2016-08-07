@@ -17,9 +17,22 @@
 
 ###############################################################################
 # Imports
-
+import math
 
 # Body
+def count(word, letter):
+	index = 0
+	count = 0
+	while index < len(word):
+		if word[index] == letter:
+				count = count + 1
+		index = index + 1
+	return count
+
+
+
+
+
 
 
 ###############################################################################
@@ -27,7 +40,8 @@ def main():
 
     # Remove print("Hello World!") and add several functions calls to count()
     # below, passing various strings and letters
-    print("Hello World!")
+    count('nancy', 'n')
+    count('ylohahahahahah', 'a')
 
 
 if __name__ == '__main__':

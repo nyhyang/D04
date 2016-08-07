@@ -11,9 +11,26 @@
 #         - then ends the program
 ################################################################################
 # Imports
-
-
+import random 
 # Body
+
+random_integer = random.randint(1, 25)
+
+
+guesses_left = 5
+while guesses_left > 0:
+	try:
+		number = float(input('Enter a number: '))
+		if int(number) == random_integer:
+			print("You're awesome!")
+		elif int(number) < random_integer:
+			print("Too low, give it another try.")
+		else:
+			print("Too high, give it another try.")
+			break
+		guesses_left -= 1
+	except:
+		print('Nice try, enter a number')
 
 
 
